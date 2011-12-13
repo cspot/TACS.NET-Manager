@@ -57,9 +57,9 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.tabPage2 = new TD.SandDock.TabPage();
             this.projectView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -128,9 +128,9 @@
             // 
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(542, 348);
+            this.tabPage1.Size = new System.Drawing.Size(542, 347);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "User Profile";
             this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
@@ -331,9 +331,9 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.projectView);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(542, 348);
+            this.tabPage2.Size = new System.Drawing.Size(542, 347);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Projects";
             this.tabPage2.Enter += new System.EventHandler(this.tabPage2_Enter);
@@ -349,7 +349,7 @@
             this.projectView.Location = new System.Drawing.Point(0, 0);
             this.projectView.MultiSelect = false;
             this.projectView.Name = "projectView";
-            this.projectView.Size = new System.Drawing.Size(542, 348);
+            this.projectView.Size = new System.Drawing.Size(542, 347);
             this.projectView.TabIndex = 0;
             this.projectView.UseCompatibleStateImageBehavior = false;
             this.projectView.View = System.Windows.Forms.View.Details;

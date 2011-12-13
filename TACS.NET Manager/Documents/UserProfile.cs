@@ -15,6 +15,7 @@ namespace TACS.NET_Manager.Documents
     /// </summary>
     public partial class UserProfile : TD.SandDock.UserTabbedDocument, ITacsDocument
     {
+        #region Private fields
         /// <summary>
         /// ParentForm property.
         /// </summary>
@@ -39,7 +40,9 @@ namespace TACS.NET_Manager.Documents
         private iCampaign.TACS.Data.UserRoleViewDsTableAdapters.UserRoleViewTableAdapter roleAdapter;
         private iCampaign.TACS.Data.UserProjectsDs.UserProjectsDataTable projectTable;
         private iCampaign.TACS.Data.UserProjectsDsTableAdapters.UserProjectsTableAdapter projectAdapter;
+        #endregion
 
+        #region Constructors
         /// <summary>
         /// Initialize instance of user profile tabbed document.
         /// </summary>
@@ -77,6 +80,7 @@ namespace TACS.NET_Manager.Documents
             InitializeDocument();
             GetRecord();
         }
+        #endregion
 
         #region ITacsDocument Members
 
