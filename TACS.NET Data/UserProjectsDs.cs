@@ -2,6 +2,9 @@
     
     
     public partial class UserProjectsDs {
+        partial class UserProjectsDataTable
+        {
+        }
     }
 }
 

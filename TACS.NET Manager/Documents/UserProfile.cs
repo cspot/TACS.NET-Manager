@@ -218,9 +218,55 @@ namespace TACS.NET_Manager.Documents
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Delete the user profile record.
+        /// </summary>
         public void DeleteRecord()
         {
-            throw new NotImplementedException();
+            bool errorStatus = false;
+
+            // Remove user project roles first
+            try
+            {
+                projectAdapter.Connection.Open();
+                projectAdapter.DeleteByUser(username);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error deleting user project roles.  Unable to delete profile.",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                errorStatus = true;
+            }
+            finally
+            {
+                projectAdapter.Connection.Close();
+            }
+
+            //  Now delete the user profile
+            if (!errorStatus) 
+            {
+                try
+                {
+                    tableAdapter.Connection.Open();
+                    tableAdapter.DeleteAccountUser(username, acctId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error deleting user profile.",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    errorStatus = true;
+                }
+                finally
+                {
+                    tableAdapter.Connection.Close();
+                }
+            }
+
+            if (!errorStatus)
+            {
+                this.Close();
+                MessageBox.Show("User profile has been deleted.");
+            }
         }
 
         /// <summary>
@@ -475,7 +521,12 @@ namespace TACS.NET_Manager.Documents
         /// <param name="e"></param>
         private void btnDelete_Activate(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature has not been implemented.");
+            if (MessageBox.Show("You are about to delete a user profile.  Do you wish to continue?",
+                "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+            {
+                DeleteRecord();
+            }
+
         }
 
         /// <summary>

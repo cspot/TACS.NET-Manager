@@ -447,7 +447,14 @@ namespace TACS.NET_Manager
         /// <param name="e"></param>
         private void btnDelUser_Activate(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature has not been implemented.");
+            Documents.UserProfile userDoc = new TACS.NET_Manager.Documents.UserProfile(this,
+                this.CurrentAccountId, treeUser.SelectedNode.Name);
+            if (MessageBox.Show("You are about to delete a user profile.  Do you wish to continue?",
+                "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+            {
+               userDoc.DeleteRecord();
+               ShowUsers();
+            }
         }
 
         /// <summary>
