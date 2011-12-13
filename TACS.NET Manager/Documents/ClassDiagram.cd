@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TACS.NET_Manager.Documents.Account" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QBAgAcBBB2KAoBAAAgCEKAACIAAEQAAlkCCAICIBhgA=</HashCode>
+      <FileName>Documents\Account.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Application" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>UTAIQYBAB2KAoBAEAADEKAAPEAAAAAAlECGAAgIBgAQ=</HashCode>
+      <FileName>Documents\Application.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Events" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ABAAQgBBAiCQIAAAADCACAgCCAAEAAABAQCBFAQAgBA=</HashCode>
+      <FileName>Documents\Events.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.GettingStarted" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAABBAiCgoAAAAACACAACAAAAAAABAACAAQAAgAA=</HashCode>
+      <FileName>Documents\GettingStarted.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Project" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>SBCAE6HEhzKYIBQoAYDgqAgLSwlBEAIFADiAACJBxAQ=</HashCode>
+      <FileName>Documents\Project.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Roles" BaseTypeListCollapsed="true">
+    <Position X="16" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AJAAAQBABiKAIIAAAACAKAgKAAAAAAAFAADAAAIAwAA=</HashCode>
+      <FileName>Documents\Roles.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.UserProfile" BaseTypeListCollapsed="true">
+    <Position X="18" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QBCAQeJgBmaAIFAoIACErAmLQxAwMSAdAGiAAIIBhQY=</HashCode>
+      <FileName>Documents\UserProfile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="TACS.NET_Manager.Documents.ITacsDocument">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAgCAIAAAAAAACAAAAAAAAAABAACAAAAAgAA=</HashCode>
+      <FileName>Documents\ITacsDocument.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

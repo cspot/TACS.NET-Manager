@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5340A21-1636-498E-996E-6F9FF67A2930}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iCampaign.TACS.Data</RootNamespace>
+    <AssemblyName>TACS.NET Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessViewDs.cs">
+      <DependentUpon>AccessViewDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccessViewDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccessViewDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsDs.cs">
+      <DependentUpon>AccountsDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccountsDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountsDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationsDs.cs">
+      <DependentUpon>ApplicationsDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ApplicationsDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationsDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AppsProjectViewDs.cs">
+      <DependentUpon>AppsProjectViewDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppsProjectViewDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppsProjectViewDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventLogDs.cs">
+      <DependentUpon>EventLogDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EventLogDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventLogDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IAccessViewDs.cs" />
+    <Compile Include="IAccountsDs.cs" />
+    <Compile Include="IApplicationsDs.cs" />
+    <Compile Include="IAppsProjectViewDs.cs" />
+    <Compile Include="IEventLogDs.cs" />
+    <Compile Include="IProjectsDs.cs" />
+    <Compile Include="IRolesDs.cs" />
+    <Compile Include="IUserDs.cs" />
+    <Compile Include="IUserProjectsDs.cs" />
+    <Compile Include="IUserRolesDs.cs" />
+    <Compile Include="IUserRoleViewDs.cs" />
+    <Compile Include="ProjectsDs.cs">
+      <DependentUpon>ProjectsDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectsDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectsDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RolesDs.cs">
+      <DependentUpon>RolesDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RolesDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RolesDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserDs.cs">
+      <DependentUpon>UserDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserProjectsDs.cs">
+      <DependentUpon>UserProjectsDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserProjectsDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserProjectsDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserRolesDs.cs">
+      <DependentUpon>UserRolesDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserRolesDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserRolesDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserRoleViewDs.cs">
+      <DependentUpon>UserRoleViewDs.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserRoleViewDs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserRoleViewDs.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AccessViewDs.xsc">
+      <DependentUpon>AccessViewDs.xsd</DependentUpon>
+    </None>
+    <None Include="AccessViewDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccessViewDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AccessViewDs.xss">
+      <DependentUpon>AccessViewDs.xsd</DependentUpon>
+    </None>
+    <None Include="AccountsDs.xsc">
+      <DependentUpon>AccountsDs.xsd</DependentUpon>
+    </None>
+    <None Include="AccountsDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountsDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AccountsDs.xss">
+      <DependentUpon>AccountsDs.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="ApplicationsDs.xsc">
+      <DependentUpon>ApplicationsDs.xsd</DependentUpon>
+    </None>
+    <None Include="ApplicationsDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApplicationsDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ApplicationsDs.xss">
+      <DependentUpon>ApplicationsDs.xsd</DependentUpon>
+    </None>
+    <None Include="AppsProjectViewDs.xsc">
+      <DependentUpon>AppsProjectViewDs.xsd</DependentUpon>
+    </None>
+    <None Include="AppsProjectViewDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppsProjectViewDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AppsProjectViewDs.xss">
+      <DependentUpon>AppsProjectViewDs.xsd</DependentUpon>
+    </None>
+    <None Include="EventLogDs.xsc">
+      <DependentUpon>EventLogDs.xsd</DependentUpon>
+    </None>
+    <None Include="EventLogDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventLogDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EventLogDs.xss">
+      <DependentUpon>EventLogDs.xsd</DependentUpon>
+    </None>
+    <None Include="iCampaign.TACS.Data.cd" />
+    <None Include="ProjectsDs.xsc">
+      <DependentUpon>ProjectsDs.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectsDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectsDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectsDs.xss">
+      <DependentUpon>ProjectsDs.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RolesDs.xsc">
+      <DependentUpon>RolesDs.xsd</DependentUpon>
+    </None>
+    <None Include="RolesDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RolesDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RolesDs.xss">
+      <DependentUpon>RolesDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserDs.xsc">
+      <DependentUpon>UserDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserDs.xss">
+      <DependentUpon>UserDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserProjectsDs.xsc">
+      <DependentUpon>UserProjectsDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserProjectsDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserProjectsDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserProjectsDs.xss">
+      <DependentUpon>UserProjectsDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserRolesDs.xsc">
+      <DependentUpon>UserRolesDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserRolesDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserRolesDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserRolesDs.xss">
+      <DependentUpon>UserRolesDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserRoleViewDs.xsc">
+      <DependentUpon>UserRoleViewDs.xsd</DependentUpon>
+    </None>
+    <None Include="UserRoleViewDs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserRoleViewDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserRoleViewDs.xss">
+      <DependentUpon>UserRoleViewDs.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

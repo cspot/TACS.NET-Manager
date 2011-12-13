@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E671128-E95C-4017-8DC7-E791173A3074}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TACS.NET_Manager</RootNamespace>
+    <AssemblyName>TACS.NET Manager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>TACS.NET_Manager.Program</StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>application_server.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SandBar, Version=1.4.3.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL" />
+    <Reference Include="SandDock, Version=3.0.6.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessService.cs" />
+    <Compile Include="AccountsBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsBox.Designer.cs">
+      <DependentUpon>AccountsBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectBox.Designer.cs">
+      <DependentUpon>ConnectBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\Account.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\Application.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\Application.Designer.cs">
+      <DependentUpon>Application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\Events.Designer.cs">
+      <DependentUpon>Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\GettingStarted.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\GettingStarted.Designer.cs">
+      <DependentUpon>GettingStarted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\ITacsDocument.cs" />
+    <Compile Include="Documents\Project.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\Roles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\UserProfile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Documents\UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectsBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectsBox.Designer.cs">
+      <DependentUpon>ProjectsBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsBox.resx">
+      <DependentUpon>AccountsBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectBox.resx">
+      <DependentUpon>ConnectBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Application.resx">
+      <DependentUpon>Application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Events.resx">
+      <DependentUpon>Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\GettingStarted.resx">
+      <DependentUpon>GettingStarted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectsBox.resx">
+      <DependentUpon>ProjectsBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleEditor.resx">
+      <DependentUpon>RoleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRoleEditor.resx">
+      <DependentUpon>UserRoleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="Documents\ClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RoleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleEditor.Designer.cs">
+      <DependentUpon>RoleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacsSession.cs" />
+    <Compile Include="UserRoleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRoleEditor.Designer.cs">
+      <DependentUpon>UserRoleEditor.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_enterprise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="application_server.ico" />
+    <Content Include="GettingStarted.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TACS.NET Data\TACS.NET Data.csproj">
+      <Project>{F5340A21-1636-498E-996E-6F9FF67A2930}</Project>
+      <Name>TACS.NET Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TACS.NET Library\TACS.NET Library.csproj">
+      <Project>{17DBD19D-B912-4E2C-BC5C-6094920AE17C}</Project>
+      <Name>TACS.NET Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

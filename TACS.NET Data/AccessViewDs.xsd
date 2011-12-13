@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccessViewDs" targetNamespace="http://tempuri.org/AccessViewDs.xsd" xmlns:mstns="http://tempuri.org/AccessViewDs.xsd" xmlns="http://tempuri.org/AccessViewDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="tacs_devConnectionString" IsAppSettingsProperty="true" Modifier="Public" Name="tacs_devConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.iCampaign.TACS.Data.Properties.Settings.GlobalReference.Default.tacs_devConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TacsDb_Design_0001ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Public" Name="TacsDb_Design_0001ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.iCampaign.TACS.Data.Properties.Settings.GlobalReference.Default.TacsDb_Design_0001ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AccessViewTableAdapter" GeneratorDataComponentClassName="AccessViewTableAdapter" Name="AccessView" UserDataComponentName="AccessViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TacsDb_Design_0001ConnectionString (Settings)" DbObjectName="TacsDb_Design_0003.dbo.AccessView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        AcctId, AcctName, AcctExpirey, Project, ConnectorType, DataSource, [Database], DbUsername, DbPassword, Username, Password, FullName, Email, 
+                         UserExpirey, UserDisabled, SessionToken, AccountOwner, SuperAdministrator
+FROM            AccessView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AcctId" DataSetColumn="AcctId" />
+              <Mapping SourceColumn="AcctName" DataSetColumn="AcctName" />
+              <Mapping SourceColumn="AcctExpirey" DataSetColumn="AcctExpirey" />
+              <Mapping SourceColumn="Project" DataSetColumn="Project" />
+              <Mapping SourceColumn="ConnectorType" DataSetColumn="ConnectorType" />
+              <Mapping SourceColumn="DataSource" DataSetColumn="DataSource" />
+              <Mapping SourceColumn="Database" DataSetColumn="Database" />
+              <Mapping SourceColumn="DbUsername" DataSetColumn="DbUsername" />
+              <Mapping SourceColumn="DbPassword" DataSetColumn="DbPassword" />
+              <Mapping SourceColumn="Username" DataSetColumn="Username" />
+              <Mapping SourceColumn="Password" DataSetColumn="Password" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="UserExpirey" DataSetColumn="UserExpirey" />
+              <Mapping SourceColumn="UserDisabled" DataSetColumn="UserDisabled" />
+              <Mapping SourceColumn="SessionToken" DataSetColumn="SessionToken" />
+              <Mapping SourceColumn="AccountOwner" DataSetColumn="AccountOwner" />
+              <Mapping SourceColumn="SuperAdministrator" DataSetColumn="SuperAdministrator" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TacsDb_Design_0001ConnectionString (Settings)" DbObjectName="TacsDb_Design_0003.dbo.Login" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="FillByLogin" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByLogin" GeneratorSourceName="FillByLogin" GetMethodModifier="Public" GetMethodName="GetDataByLogin" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByLogin" UserSourceName="FillByLogin">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Login</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@pProject" Precision="0" ProviderType="VarChar" Scale="0" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@pUsername" Precision="0" ProviderType="VarChar" Scale="0" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@pPassword" Precision="0" ProviderType="VarChar" Scale="0" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AccessViewDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AccessViewDs" msprop:Generator_DataSetName="AccessViewDs" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AccessView" msprop:Generator_UserTableName="AccessView" msprop:Generator_RowDeletedName="AccessViewRowDeleted" msprop:Generator_RowChangedName="AccessViewRowChanged" msprop:Generator_RowClassName="AccessViewRow" msprop:Generator_RowChangingName="AccessViewRowChanging" msprop:Generator_RowEvArgName="AccessViewRowChangeEvent" msprop:Generator_RowEvHandlerName="AccessViewRowChangeEventHandler" msprop:Generator_TableClassName="AccessViewDataTable" msprop:Generator_TableVarName="tableAccessView" msprop:Generator_RowDeletingName="AccessViewRowDeleting" msprop:Generator_TablePropName="AccessView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AcctId" msprop:Generator_UserColumnName="AcctId" msprop:Generator_ColumnPropNameInRow="AcctId" msprop:Generator_ColumnVarNameInTable="columnAcctId" msprop:Generator_ColumnPropNameInTable="AcctIdColumn" type="xs:long" />
+              <xs:element name="AcctName" msprop:Generator_UserColumnName="AcctName" msprop:Generator_ColumnPropNameInRow="AcctName" msprop:Generator_ColumnVarNameInTable="columnAcctName" msprop:Generator_ColumnPropNameInTable="AcctNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AcctExpirey" msprop:Generator_UserColumnName="AcctExpirey" msprop:Generator_ColumnPropNameInRow="AcctExpirey" msprop:Generator_ColumnVarNameInTable="columnAcctExpirey" msprop:Generator_ColumnPropNameInTable="AcctExpireyColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Project" msprop:Generator_UserColumnName="Project" msprop:Generator_ColumnPropNameInRow="Project" msprop:Generator_ColumnVarNameInTable="columnProject" msprop:Generator_ColumnPropNameInTable="ProjectColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConnectorType" msprop:Generator_UserColumnName="ConnectorType" msprop:Generator_ColumnPropNameInRow="ConnectorType" msprop:Generator_ColumnVarNameInTable="columnConnectorType" msprop:Generator_ColumnPropNameInTable="ConnectorTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataSource" msprop:Generator_UserColumnName="DataSource" msprop:Generator_ColumnPropNameInRow="DataSource" msprop:Generator_ColumnVarNameInTable="columnDataSource" msprop:Generator_ColumnPropNameInTable="DataSourceColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Database" msprop:Generator_UserColumnName="Database" msprop:Generator_ColumnPropNameInRow="Database" msprop:Generator_ColumnVarNameInTable="columnDatabase" msprop:Generator_ColumnPropNameInTable="DatabaseColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DbUsername" msprop:Generator_UserColumnName="DbUsername" msprop:Generator_ColumnPropNameInRow="DbUsername" msprop:Generator_ColumnVarNameInTable="columnDbUsername" msprop:Generator_ColumnPropNameInTable="DbUsernameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DbPassword" msprop:Generator_UserColumnName="DbPassword" msprop:Generator_ColumnPropNameInRow="DbPassword" msprop:Generator_ColumnVarNameInTable="columnDbPassword" msprop:Generator_ColumnPropNameInTable="DbPasswordColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Username" msprop:Generator_UserColumnName="Username" msprop:Generator_ColumnPropNameInRow="Username" msprop:Generator_ColumnVarNameInTable="columnUsername" msprop:Generator_ColumnPropNameInTable="UsernameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInTable="PasswordColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_UserColumnName="FullName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_ColumnPropNameInRow="FullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnPropNameInRow="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserExpirey" msprop:Generator_UserColumnName="UserExpirey" msprop:Generator_ColumnPropNameInRow="UserExpirey" msprop:Generator_ColumnVarNameInTable="columnUserExpirey" msprop:Generator_ColumnPropNameInTable="UserExpireyColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UserDisabled" msprop:Generator_UserColumnName="UserDisabled" msprop:Generator_ColumnPropNameInRow="UserDisabled" msprop:Generator_ColumnVarNameInTable="columnUserDisabled" msprop:Generator_ColumnPropNameInTable="UserDisabledColumn" type="xs:boolean" />
+              <xs:element name="SessionToken" msprop:Generator_UserColumnName="SessionToken" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnSessionToken" msprop:Generator_ColumnPropNameInTable="SessionTokenColumn" msprop:Generator_ColumnPropNameInRow="SessionToken" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountOwner" msprop:Generator_UserColumnName="AccountOwner" msprop:Generator_ColumnPropNameInRow="AccountOwner" msprop:Generator_ColumnVarNameInTable="columnAccountOwner" msprop:Generator_ColumnPropNameInTable="AccountOwnerColumn" type="xs:boolean" />
+              <xs:element name="SuperAdministrator" msprop:Generator_UserColumnName="SuperAdministrator" msprop:Generator_ColumnVarNameInTable="columnSuperAdministrator" msprop:Generator_ColumnPropNameInRow="SuperAdministrator" msprop:Generator_ColumnPropNameInTable="SuperAdministratorColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AccessView" />
+      <xs:field xpath="mstns:AcctId" />
+      <xs:field xpath="mstns:Project" />
+      <xs:field xpath="mstns:Username" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

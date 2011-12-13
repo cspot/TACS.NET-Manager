@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="iCampaign.TACS.Data.ApplicationsDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAxAAAAJABgAAQAAAAAgCQBgEAAAAAAEABBA=</HashCode>
+      <FileName>ApplicationsDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.ApplicationsDsTableAdapters.ApplicationsTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAACAAAAAAQBBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.ApplicationsDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAEAMAAgEAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AccessViewDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAwAAAAJABAAQQAABAAgCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>AccessViewDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AccessViewDsTableAdapters.Access_ViewTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccessViewDs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AccessViewDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAwAAgAJABAAAQAAABAgCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>UserDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserDsTableAdapters.UsersTableAdapter" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASQAGAAEAAAAAcAICAQAAAAAKUICAAAAAEAAAEABBA=</HashCode>
+      <FileName>UserDs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABEEBAAAAMAAgAAACgAAAAAQAAAIABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.EventLogDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAwAAAAJABgAAQAAAAAgDQBgAAAAAAAEABBA=</HashCode>
+      <FileName>EventLogDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.EventLogDsTableAdapters.EventLogTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAgACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.EventLogDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABBBAEBQAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserRolesDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAAQABAAAgCQBgAIAAAAQEABBA=</HashCode>
+      <FileName>UserRolesDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserRolesDsTableAdapters.UserRoleViewTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAIAAAAAAAACAICABgAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserRolesDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.ProjectsDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJARAAAQCAAAAgCQBgAAAAAAAEABRA=</HashCode>
+      <FileName>ProjectsDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.ProjectsDsTableAdapters.ProjectsTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGBAEAAAAAcAJAAAAAAAACEICAgYAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.ProjectsDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgACAAAABABAEBAAAAMAAgAAACgAAAAAQgAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.RolesDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAAQAAAAggGRBgAAAAAAAEABBA=</HashCode>
+      <FileName>RolesDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.RolesDsTableAdapters.RolesTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAJAAAAAAAACEICAgAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.RolesDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAASAAAABABAEBAAAAMAAgAAACgAAAAAQAAAAEBAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserProjectsDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJAJAAAQAAAAAhCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>UserProjectsDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserProjectsDsTableAdapters.UserProjectsTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIgAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserProjectsDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgQAABAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AccountsDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAAQAAQEAgCQBiAAAAAAAEABBA=</HashCode>
+      <FileName>AccountsDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AccountsDsTableAdapters.AccountsTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAAKEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AccountsDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAGAAAABABAEBAAAAMBAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AppsProjectViewDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwCAAAJBBAAAQAAAAAgCQBgAEAAAAAEABBA=</HashCode>
+      <FileName>AppsProjectViewDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AppsProjectViewDsTableAdapters.AppProjectsViewTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAGAAEAAAAAcAJAAAAAAAACAICAgACAAAAAAQBBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.AppsProjectViewDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserRoleViewDs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAAQABAAAgCQBgAIAAAAQEABBA=</HashCode>
+      <FileName>UserRoleViewDs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserRoleViewDsTableAdapters.UserRoleViewTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACQAGAAEAAAAAcAICAAAAAAACAIGAAAAAAAAAgABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iCampaign.TACS.Data.UserRoleViewDsTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="iCampaign.TACS.Data.IAccountsDs" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAQAAAAAgAAACAAAAAAAAAABA=</HashCode>
+      <FileName>IAccountsDs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

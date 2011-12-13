@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TACS.NET_Manager.MainForm" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UcAjKQAEoy1bV4hAJjHlFKQL+oxGAS0qA+IErA0UB8A=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.Program" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.Properties.Resources" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAggEEQRACAAABAAAClEAAAA0AgAAAASAAQAAAAAYA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.Properties.Settings" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.AccessService" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccessService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.ProjectService" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjectService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.TacsSession" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gggCAAAkAABAASIAAABAAAAggACAEIAgACggAAAEAQg=</HashCode>
+      <FileName>TacsSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.AboutBox" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIAAAAgAACAgCAUAAACAAAADAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>AboutBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.AccountsBox" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIEACABCCAAAAkAAACCAEACAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>AccountsBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Application" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UTAIQYBAB2KAoBAEAADEKAAPEAAAAAAlECGAAgIBgAQ=</HashCode>
+      <FileName>Documents\Application.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.GettingStarted" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABBAiCgoAAAAACACAACAAAAAAABAACAAQAAgAA=</HashCode>
+      <FileName>Documents\GettingStarted.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Project" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SBCAE6HEhzKYIBQoAYDgqAgLSwlBEAIFADiAACJBxAQ=</HashCode>
+      <FileName>Documents\Project.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.UserProfile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBCAQeJgBmaAIFAoIACErAmLQxAwMSAdAGiAAIIBhQY=</HashCode>
+      <FileName>Documents\UserProfile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Roles" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAQBABiKAIIAAAACAKAgKAAAAAAAFAADAAAIAwAA=</HashCode>
+      <FileName>Documents\Roles.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TACS.NET_Manager.ProjectsBox" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFASAABCABAAkAAACEAkACAAABAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ProjectsBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TACS.NET_Manager.Documents.Account" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAgAcBBB2KAoBAAAgCEKAACIAAEQAAlkCCAICIBhgA=</HashCode>
+      <FileName>Documents\Account.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TACS.NET_Manager.ConnectBox" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConnectBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TACS.NET_Manager.Documents.ITacsDocument" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAgCAIAAAAAAACAAAAAAAAAABAACAAAAAgAA=</HashCode>
+      <FileName>Documents\ITacsDocument.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

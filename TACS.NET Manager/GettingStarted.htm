@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Getting Started</title>
+<style type="text/css">
+.style1 {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: #008000;
+}
+.style3 {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: small;
+	margin-left: 40px;
+}
+</style>
+</head>
+
+<body style="background-color: #C0C0C0">
+
+<h2 class="style1">Getting Started with TACS.NET</h2>
+<p class="style3">Welcome to the TACS.NET Manager application.&nbsp; TACS.NET is 
+a client/server framework designed to provide access control services for web 
+and desktop applications built on Microsoft&#39;s .NET Framework.&nbsp; With this 
+application you may manage TACS.NET applications, accounts, project databases, 
+security roles, and user profiles.&nbsp; Please refer to the TACS.NET Software 
+Development Kit for additional documentation on building applications using this 
+framework.</p>
+<h3 class="style1">TACS.NET Objects</h3>
+<p class="style3">In order to understand TACS.NET&#39;s architecture, it is helpful 
+to understand the various objects available and their functionality.&nbsp; See 
+the following definitions:</p>
+<ul>
+	<li>
+	<p class="style3"><strong>Application</strong> -- An application that uses 
+	this framework must be registered in the TACS.NET database.&nbsp; Registered 
+	applications are shown in the Application Explorer window.</p>
+	</li>
+	<li>
+	<p class="style3"><strong>Account</strong> -- Project databases and user 
+	profiles are grouped under accounts.&nbsp; An account represents a client 
+	with one or more project databases and user profiles.&nbsp; An account can 
+	be opened from the File...Open menu option or by pressing CTRL+O.</p>
+	</li>
+	<li>
+	<p class="style3"><strong>Project</strong> -- Represents a project database.&nbsp; 
+	The project record contains the database access credentials for a given 
+	application.&nbsp; Credentials are generated when a user successfully 
+	authenticates with the TACS.NET Server, thus eliminating the need to store 
+	credentials on the user&#39;s local computer.&nbsp; Projects registered under an 
+	account are displayed in the Project Explorer window after you open an 
+	account.</p>
+	</li>
+	<li>
+	<p class="style3"><strong>Roles</strong> -- Security roles are created on a 
+	per project basis.&nbsp; Applications use role objects to decide what 
+	features a user has access to.&nbsp; Roles are edited by opening the 
+	associated project from the Project Explorer.</p>
+	</li>
+	<li>
+	<p class="style3"><strong>Users</strong> -- User objects define which users 
+	are allowed to login and use specified projects with certain applications.&nbsp; 
+	Users registered under an account are displayed in the User Explorer window 
+	after you open an account.&nbsp; You may also assign users to projects by 
+	editing a specific user profile.</p>
+	</li>
+</ul>
+<p class="style3">&nbsp;</p>
+
+</body>
+
+</html>

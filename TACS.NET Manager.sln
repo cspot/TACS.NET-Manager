@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TACS.NET Manager", "TACS.NET Manager\TACS.NET Manager.csproj", "{9E671128-E95C-4017-8DC7-E791173A3074}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TACS.NET Manager Setup", "TACS.NET Manager Setup\TACS.NET Manager Setup.vdproj", "{AA7E4B84-964B-4B92-94BB-668F593B45EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TACS.NET Data", "TACS.NET Data\TACS.NET Data.csproj", "{F5340A21-1636-498E-996E-6F9FF67A2930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TACS.NET Library", "TACS.NET Library\TACS.NET Library.csproj", "{17DBD19D-B912-4E2C-BC5C-6094920AE17C}"
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "TACS.NET Database", "TACS.NET Database\TACS.NET Database.dbproj", "{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E671128-E95C-4017-8DC7-E791173A3074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E671128-E95C-4017-8DC7-E791173A3074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E671128-E95C-4017-8DC7-E791173A3074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E671128-E95C-4017-8DC7-E791173A3074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7E4B84-964B-4B92-94BB-668F593B45EE}.Debug|Any CPU.ActiveCfg = Debug
+		{AA7E4B84-964B-4B92-94BB-668F593B45EE}.Release|Any CPU.ActiveCfg = Release
+		{F5340A21-1636-498E-996E-6F9FF67A2930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5340A21-1636-498E-996E-6F9FF67A2930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5340A21-1636-498E-996E-6F9FF67A2930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5340A21-1636-498E-996E-6F9FF67A2930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17DBD19D-B912-4E2C-BC5C-6094920AE17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DBD19D-B912-4E2C-BC5C-6094920AE17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DBD19D-B912-4E2C-BC5C-6094920AE17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DBD19D-B912-4E2C-BC5C-6094920AE17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF4C47D-C70F-4EDE-BF5B-DA340F548A87}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
