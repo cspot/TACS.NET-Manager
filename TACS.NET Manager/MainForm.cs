@@ -414,7 +414,14 @@ namespace TACS.NET_Manager
         /// <param name="e"></param>
         private void btnDelProj_Activate(object sender, EventArgs e)
         {
-            MessageBox.Show("This feature has not been implemented.");
+            Documents.Project projectDoc = new TACS.NET_Manager.Documents.Project(this, this.CurrentAccountId,
+                treeProj.SelectedNode.Name);
+            if (MessageBox.Show("You are about to delete this project and all of its roles!  Are you sure?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                projectDoc.DeleteRecord();
+                ShowProjects();
+            }
         }
 
         /// <summary>

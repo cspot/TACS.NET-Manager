@@ -203,9 +203,27 @@ namespace TACS.NET_Manager.Documents
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Delete the project from the database.
+        /// </summary>
         public void DeleteRecord()
         {
-            throw new NotImplementedException();
+            // First verify there are no users assigned to this project.
+            if (CheckForUsers(project))
+            {
+                MessageBox.Show("You must first remove all users from this project before deleting it!", "Warning",
+                    MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                this.ApplicationForm.ShowProjects();
+            }
+            else
+            {
+                if (RemoveProject(project, this.ApplicationForm.CurrentAccountId))
+                {
+                    this.ApplicationForm.ShowProjects();
+                    MessageBox.Show("Project successfully deleted.");
+                    this.Close();
+                }
+            }
         }
 
         /// <summary>
@@ -431,7 +449,11 @@ namespace TACS.NET_Manager.Documents
         /// <param name="e"></param>
         private void btnDelete_Activate(object sender, EventArgs e)
         {
-            MessageBox.Show("Feature not implemented.");
+            if (MessageBox.Show("You are about to delete this project and all of its roles!  Are you sure?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                DeleteRecord();
+            }
         }
 
         /// <summary>
@@ -741,6 +763,118 @@ namespace TACS.NET_Manager.Documents
             {
                 roleAdapter.Connection.Close();
             }
+        }
+
+        /// <summary>
+        /// Check to see if there are any users assigned to specified project.
+        /// </summary>
+        /// <param name="project">string: Project name.</param>
+        /// <returns>bool: Result.</returns>
+        private bool CheckForUsers(string project)
+        {
+            bool usersExist = true;
+            int recordCount = 0;
+            
+            //  Initialize data objects
+            iCampaign.TACS.Data.UserRoleViewDsTableAdapters.UserRoleViewTableAdapter userTableAdapter =
+                new iCampaign.TACS.Data.UserRoleViewDsTableAdapters.UserRoleViewTableAdapter();
+            userTableAdapter.Connection.ConnectionString = TacsSession.ConnectionString;
+
+            //  Get the record count
+            try
+            {
+                userTableAdapter.Connection.Open();
+                recordCount = (int)userTableAdapter.CountProjectUsers(project);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                userTableAdapter.Connection.Close();
+            }
+
+            if (recordCount > 0)
+                usersExist = true;
+            else
+                usersExist = false;
+            
+            return usersExist;
+        }
+
+        /// <summary>
+        /// Delete the project and role records from the database.
+        /// </summary>
+        /// <param name="whichProject">string: Project name.</param>
+        /// <returns>bool: Success status.</returns>
+        private bool RemoveProject(string whichProject, long acctId)
+        {
+            bool returnStatus = false;
+
+            if (DeleteRoles(whichProject))
+            {
+                returnStatus = DeleteProject(whichProject, acctId);
+            }
+
+            return returnStatus;
+        }
+
+        /// <summary>
+        /// Delete the roles for this project.
+        /// </summary>
+        /// <param name="whichProject">string: Project name.</param>
+        /// <returns>bool: Success status.</returns>
+        private bool DeleteRoles(string whichProject)
+        {
+            bool returnStatus = false;
+
+            try
+            {
+                roleAdapter.Connection.Open();
+                roleAdapter.DeleteByProject(whichProject);
+                returnStatus = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error deleting project roles", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                returnStatus = false;
+            }
+            finally
+            {
+                roleAdapter.Connection.Close();
+            }
+
+            return returnStatus;
+        }
+
+        /// <summary>
+        /// Delete the specificed project from the database.
+        /// </summary>
+        /// <param name="whichProject">string: Project name.</param>
+        /// <param name="acctId">long: Account id.</param>
+        /// <returns>bool: Success status.</returns>
+        private bool DeleteProject(string whichProject, long acctId)
+        {
+            bool returnStatus = false;
+
+            try
+            {
+                tableAdapter.Connection.Open();
+                tableAdapter.DeleteProject(whichProject, acctId);
+                returnStatus = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "An error occurred deleting project", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                returnStatus = false;
+            }
+            finally
+            {
+                tableAdapter.Connection.Close();
+            }
+
+            return returnStatus;
         }
     }
 }
