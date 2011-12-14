@@ -264,6 +264,7 @@ namespace TACS.NET_Manager.Documents
 
             if (!errorStatus)
             {
+                this.ApplicationForm.ShowUsers();
                 this.Close();
                 MessageBox.Show("User profile has been deleted.");
             }
@@ -353,6 +354,7 @@ namespace TACS.NET_Manager.Documents
                 _FormChanged = false;
                 passwordChange = false;
                 this.Text = row.Username + " [User]";
+                username = row.Username;
                 tbUsername.ReadOnly = true;
                 btnSave.Enabled = true;
                 btnDelete.Enabled = true;
