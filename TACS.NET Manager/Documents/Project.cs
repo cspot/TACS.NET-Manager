@@ -10,8 +10,9 @@ using System.Windows.Forms;
 
 namespace TACS.NET_Manager.Documents
 {
-    public partial class Project : TD.SandDock.UserTabbedDocument, ITacsDocument 
+    public partial class Project : TD.SandDock.UserTabbedDocument, ITacsDocument
     {
+        #region Private fields
         /// <summary>
         /// ParentForm property.
         /// </summary>
@@ -33,6 +34,7 @@ namespace TACS.NET_Manager.Documents
         private iCampaign.TACS.Data.ApplicationsDsTableAdapters.ApplicationsTableAdapter appTableAdapter;
         private iCampaign.TACS.Data.RolesDs.RolesDataTable roleTable;
         private iCampaign.TACS.Data.RolesDsTableAdapters.RolesTableAdapter roleAdapter;
+        #endregion
 
         #region Constructors
 
@@ -345,6 +347,7 @@ namespace TACS.NET_Manager.Documents
                 _NewRecord = false;
                 _FormChanged = false;
                 this.Text = row.Project + " [Project]";
+                project = row.Project;
                 tbProject.ReadOnly = true;
                 btnSave.Enabled = true;
                 btnDelete.Enabled = true;
