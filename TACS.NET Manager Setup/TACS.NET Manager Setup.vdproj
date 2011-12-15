@@ -15,37 +15,25 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_08243F16017BAFA25A2EF18C4B1FAD3D"
+        "MsmKey" = "8:_1D166EFF50E683C59BBAB98DFCAE8F33"
         "OwnerKey" = "8:_FE35E5275AD34D958C58D2BD444DAC7B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_10958F83DB9C4C41D9777D242240831D"
+        "MsmKey" = "8:_56E494FE722B186959E1D709698D05E1"
         "OwnerKey" = "8:_FE35E5275AD34D958C58D2BD444DAC7B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_10958F83DB9C4C41D9777D242240831D"
-        "OwnerKey" = "8:_08243F16017BAFA25A2EF18C4B1FAD3D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5FE1C959C713D708E7DF72A7C8311C34"
+        "MsmKey" = "8:_8E9C33267F9711F4CDB002DDB29B18C9"
         "OwnerKey" = "8:_FE35E5275AD34D958C58D2BD444DAC7B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7130D9040EA649B3FAE9877F4EF10507"
-        "OwnerKey" = "8:_FE35E5275AD34D958C58D2BD444DAC7B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D7A3B2693AC6FAFC2154479D970561BD"
+        "MsmKey" = "8:_AA3494ADDD54A9DC91DFA09518E9F7FB"
         "OwnerKey" = "8:_FE35E5275AD34D958C58D2BD444DAC7B"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -53,12 +41,6 @@
         {
         "MsmKey" = "8:_EA0754F1D5324BFB956EBE6D058F4208"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FCFFEE7ED89228629FFCECEFDEA81589"
-        "OwnerKey" = "8:_FE35E5275AD34D958C58D2BD444DAC7B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,37 +58,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_10958F83DB9C4C41D9777D242240831D"
+        "OwnerKey" = "8:_56E494FE722B186959E1D709698D05E1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_08243F16017BAFA25A2EF18C4B1FAD3D"
+        "OwnerKey" = "8:_AA3494ADDD54A9DC91DFA09518E9F7FB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7130D9040EA649B3FAE9877F4EF10507"
+        "OwnerKey" = "8:_8E9C33267F9711F4CDB002DDB29B18C9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FCFFEE7ED89228629FFCECEFDEA81589"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5FE1C959C713D708E7DF72A7C8311C34"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D7A3B2693AC6FAFC2154479D970561BD"
+        "OwnerKey" = "8:_1D166EFF50E683C59BBAB98DFCAE8F33"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -206,7 +176,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729"
+                "FrameworkVersion" = "8:3.5.30729 "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -214,91 +184,18 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_08243F16017BAFA25A2EF18C4B1FAD3D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1D166EFF50E683C59BBAB98DFCAE8F33"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:VoterMart.ETL.Connector, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SandBar, Version=1.4.3.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                }
-            "SourcePath" = "8:VoterMart.ETL.Connector.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_10958F83DB9C4C41D9777D242240831D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:LumenWorks.Framework.IO, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:LumenWorks.Framework.IO.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5FE1C959C713D708E7DF72A7C8311C34"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TACS.NET Data, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:TACS.NET Data.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7130D9040EA649B3FAE9877F4EF10507"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SandBar, Version=1.4.2.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
+                    "_1D166EFF50E683C59BBAB98DFCAE8F33"
+                    {
+                    "Name" = "8:SandBar.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:SandBar.dll"
             "TargetName" = "8:"
@@ -318,15 +215,82 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D7A3B2693AC6FAFC2154479D970561BD"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_56E494FE722B186959E1D709698D05E1"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TACS.NET Library, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:TACS.NET Library, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_56E494FE722B186959E1D709698D05E1"
+                    {
+                    "Name" = "8:TACS.NET Library.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:TACS.NET Library.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8E9C33267F9711F4CDB002DDB29B18C9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SandDock, Version=3.0.6.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_8E9C33267F9711F4CDB002DDB29B18C9"
+                    {
+                    "Name" = "8:SandDock.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SandDock.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AA3494ADDD54A9DC91DFA09518E9F7FB"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TACS.NET Data, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_AA3494ADDD54A9DC91DFA09518E9F7FB"
+                    {
+                    "Name" = "8:TACS.NET Data.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:TACS.NET Data.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
@@ -362,32 +326,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FCFFEE7ED89228629FFCECEFDEA81589"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SandDock, Version=3.0.5.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:SandDock.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -446,18 +384,18 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TACS.NET Manager"
-        "ProductCode" = "8:{5F82FF5A-895F-4C19-BEEB-55792C0C8A96}"
-        "PackageCode" = "8:{89AED1BF-2E75-4D4E-AFC3-E529A1BF9127}"
+        "ProductCode" = "8:{6D8BD8D2-9467-40B8-9F40-1BFEF8F47C6D}"
+        "PackageCode" = "8:{A46761EB-7C69-4106-AA1F-96D84EC9275C}"
         "UpgradeCode" = "8:{2E5DB043-BF3F-4237-B4FC-1DF123F0DDD0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:0.2.1"
+        "ProductVersion" = "8:0.3.0"
         "Manufacturer" = "8:cSpot InterWorks"
-        "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
+        "ARPHELPTELEPHONE" = "8:(916) 231-0602"
+        "ARPHELPLINK" = "8:http://www.icspot.com/"
         "Title" = "8:TACS.NET Manager Setup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:c.Spot InterWorks"
@@ -1060,7 +998,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FE35E5275AD34D958C58D2BD444DAC7B"
             {
-            "SourcePath" = "8:..\\TACS.NET Manager\\obj\\Debug\\TACS.NET Manager.exe"
+            "SourcePath" = "8:..\\TACS.NET Manager\\obj\\Release\\TACS.NET Manager.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B95CCAE432D2433E950D6B10AE9BDA94"
