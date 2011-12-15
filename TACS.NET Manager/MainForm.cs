@@ -22,6 +22,8 @@ namespace TACS.NET_Manager
 
         Documents.Events eventViewer;
         Documents.GettingStarted gettingStarted;
+        Documents.GettingStarted onlineHelp;
+
         /// <summary>
         /// CurrentAccountId property.
         /// </summary>
@@ -898,6 +900,26 @@ namespace TACS.NET_Manager
                 key.SetValue("ConnectionString", connstr);
             }
             key.Close();
+        }
+ 
+        /// <summary>
+        /// Help menu command.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void mnuHelp_Activate(object sender, EventArgs e)
+        {
+            if (onlineHelp == null)
+            {
+                onlineHelp = new TACS.NET_Manager.Documents.GettingStarted(this, "\\Help.htm", "Help");
+                onlineHelp.Manager = sandDockManager1;
+                onlineHelp.OpenDocked(TD.SandDock.ContainerDockLocation.Center);
+            }
+            else
+            {
+                onlineHelp.Close();
+                onlineHelp = null;
+            }
         }
         #endregion
     }

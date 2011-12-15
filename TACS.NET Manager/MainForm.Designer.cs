@@ -90,6 +90,7 @@
             this.btnRefreshApp = new TD.SandBar.ButtonItem();
             this.btnAddApp = new TD.SandBar.ButtonItem();
             this.btnDelApp = new TD.SandBar.ButtonItem();
+            this.mnuHelp = new TD.SandBar.MenuButtonItem();
             this.topSandBarDock.SuspendLayout();
             this.dockContainer2.SuspendLayout();
             this.dockProjects.SuspendLayout();
@@ -353,6 +354,7 @@
             // menuBarItem5
             // 
             this.menuBarItem5.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.mnuHelp,
             this.mnuAbout});
             this.menuBarItem5.Text = "&Help";
             // 
@@ -592,6 +594,12 @@
             this.btnDelApp.Image = global::TACS.NET_Manager.Properties.Resources.application_enterprise_delete;
             this.btnDelApp.Activate += new System.EventHandler(this.btnDelApp_Activate);
             // 
+            // mnuHelp
+            // 
+            this.mnuHelp.Shortcut = System.Windows.Forms.Shortcut.F1;
+            this.mnuHelp.Text = "Help...";
+            this.mnuHelp.Activate += new System.EventHandler(this.mnuHelp_Activate);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -680,6 +688,7 @@
         private TD.SandBar.MenuButtonItem mnuPaste;
         private TD.SandBar.MenuButtonItem mnuDelete;
         private TD.SandBar.MenuButtonItem mnuDbSettings;
+        private TD.SandBar.MenuButtonItem mnuHelp;
     }
 }
 

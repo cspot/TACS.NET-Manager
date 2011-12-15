@@ -18,16 +18,41 @@ namespace TACS.NET_Manager.Documents
         TACS.NET_Manager.MainForm _ApplicationForm;
 
         /// <summary>
+        /// CurrentUrl property.
+        /// </summary>
+        string _CurrentUrl;
+
+        #region Constructors
+        /// <summary>
         /// Initialize instance of GettingStarted document.
         /// </summary>
         public GettingStarted(TACS.NET_Manager.MainForm parent)
         {
             _ApplicationForm = parent;
+            _CurrentUrl = "\\GettingStarted.htm";
 
             //  Initialize controls
             InitializeComponent();
             InitializeDocument();
         }
+
+        /// <summary>
+        /// Initialize instance of browser document.
+        /// </summary>
+        /// <param name="parent">MainForm: parent form object.</param>
+        /// <param name="url">string: Url of document to open.</param>
+        /// <param name="title">string: Document title.</param>
+        public GettingStarted(TACS.NET_Manager.MainForm parent, string url, string title)
+        {
+            _ApplicationForm = parent;
+            _CurrentUrl = url;
+            this.TabText = title;
+
+            //  Initialize controls
+            InitializeComponent();
+            InitializeDocument();
+        }
+        #endregion
 
         #region ITacsDocument Members
 
@@ -53,6 +78,17 @@ namespace TACS.NET_Manager.Documents
         public bool NewRecord
         {
             get { throw new NotImplementedException(); }
+        }
+
+        /// <summary>
+        /// Returns the current URL being displayed.
+        /// </summary>
+        public string CurrentUrl
+        {
+            get
+            {
+                return _CurrentUrl;
+            }
         }
 
         /// <summary>
@@ -107,7 +143,7 @@ namespace TACS.NET_Manager.Documents
             string currentApp = System.Windows.Forms.Application.ExecutablePath;
             FileInfo executableFileInfo = new FileInfo(currentApp);
             url.Append(executableFileInfo.DirectoryName);
-            url.Append("\\GettingStarted.htm");
+            url.Append(this.CurrentUrl);
             return url.ToString();
         }
 
