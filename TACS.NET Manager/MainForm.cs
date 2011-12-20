@@ -483,6 +483,7 @@ namespace TACS.NET_Manager
         {
             this.SuspendLayout();
             this.Text = this.CurrentAccount + " - TACS.NET Manager";
+            statusBarItem1.Text = "Viewing account: " + this.CurrentAccount;
 
             //  Update menu items
             mnuAdd.Enabled = true;
@@ -507,6 +508,7 @@ namespace TACS.NET_Manager
         {
             this.SuspendLayout();
             this.Text = "TACS.NET Manager";
+            statusBarItem1.Text = "Connected";
 
             //  Update menu items
             mnuAdd.Enabled = false;
