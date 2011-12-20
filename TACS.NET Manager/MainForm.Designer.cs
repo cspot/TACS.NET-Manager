@@ -45,7 +45,6 @@
             this.mnuAdd = new TD.SandBar.MenuButtonItem();
             this.mnuAddProject = new TD.SandBar.MenuButtonItem();
             this.mnuAddUser = new TD.SandBar.MenuButtonItem();
-            this.mnuClose = new TD.SandBar.MenuButtonItem();
             this.mnuCloseAcct = new TD.SandBar.MenuButtonItem();
             this.mnuExit = new TD.SandBar.MenuButtonItem();
             this.menuBarItem2 = new TD.SandBar.MenuBarItem();
@@ -65,6 +64,7 @@
             this.menuBarItem4 = new TD.SandBar.MenuBarItem();
             this.mnuCloseAll = new TD.SandBar.MenuButtonItem();
             this.menuBarItem5 = new TD.SandBar.MenuBarItem();
+            this.mnuHelp = new TD.SandBar.MenuButtonItem();
             this.mnuAbout = new TD.SandBar.MenuButtonItem();
             this.statusBar1 = new TD.SandBar.StatusBar();
             this.statusBarItem1 = new TD.SandBar.StatusBarItem();
@@ -90,7 +90,6 @@
             this.btnRefreshApp = new TD.SandBar.ButtonItem();
             this.btnAddApp = new TD.SandBar.ButtonItem();
             this.btnDelApp = new TD.SandBar.ButtonItem();
-            this.mnuHelp = new TD.SandBar.MenuButtonItem();
             this.topSandBarDock.SuspendLayout();
             this.dockContainer2.SuspendLayout();
             this.dockProjects.SuspendLayout();
@@ -168,7 +167,6 @@
             this.mnuNew,
             this.mnuOpen,
             this.mnuAdd,
-            this.mnuClose,
             this.mnuCloseAcct,
             this.mnuExit});
             this.menuBarItem1.Text = "&File";
@@ -222,15 +220,10 @@
             // 
             this.mnuAddUser.Text = "User Profile...";
             // 
-            // mnuClose
-            // 
-            this.mnuClose.BeginGroup = true;
-            this.mnuClose.Shortcut = System.Windows.Forms.Shortcut.CtrlW;
-            this.mnuClose.Text = "Close";
-            // 
             // mnuCloseAcct
             // 
-            this.mnuCloseAcct.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftW;
+            this.mnuCloseAcct.BeginGroup = true;
+            this.mnuCloseAcct.Shortcut = System.Windows.Forms.Shortcut.CtrlW;
             this.mnuCloseAcct.Text = "Close Account";
             this.mnuCloseAcct.Activate += new System.EventHandler(this.mnuCloseAcct_Activate);
             // 
@@ -357,6 +350,12 @@
             this.mnuHelp,
             this.mnuAbout});
             this.menuBarItem5.Text = "&Help";
+            // 
+            // mnuHelp
+            // 
+            this.mnuHelp.Shortcut = System.Windows.Forms.Shortcut.F1;
+            this.mnuHelp.Text = "Help...";
+            this.mnuHelp.Activate += new System.EventHandler(this.mnuHelp_Activate);
             // 
             // mnuAbout
             // 
@@ -594,12 +593,6 @@
             this.btnDelApp.Image = global::TACS.NET_Manager.Properties.Resources.application_enterprise_delete;
             this.btnDelApp.Activate += new System.EventHandler(this.btnDelApp_Activate);
             // 
-            // mnuHelp
-            // 
-            this.mnuHelp.Shortcut = System.Windows.Forms.Shortcut.F1;
-            this.mnuHelp.Text = "Help...";
-            this.mnuHelp.Activate += new System.EventHandler(this.mnuHelp_Activate);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -652,7 +645,6 @@
         private TD.SandBar.MenuButtonItem mnuAdd;
         private TD.SandBar.MenuButtonItem mnuAddProject;
         private TD.SandBar.MenuButtonItem mnuAddUser;
-        private TD.SandBar.MenuButtonItem mnuClose;
         private TD.SandBar.MenuButtonItem mnuCloseAcct;
         private TD.SandBar.MenuButtonItem mnuExit;
         private TD.SandDock.DockContainer dockContainer2;
