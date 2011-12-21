@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("c.Spot InterWorks")]
 [assembly: AssemblyProduct("TACS.NET Client")]
-[assembly: AssemblyCopyright("Copyright © c.Spot InterWorks 2007-2010")]
+[assembly: AssemblyCopyright("Copyright © c.Spot InterWorks 2007-2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
