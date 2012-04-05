@@ -1,0 +1,12 @@
+= TACS.NET Manager
+
+This is a Windows based desktop application used for managing projects and users in a TACS.NET database instance.
+
+== Requirements
+
+* .NET Framework 3.5 or greater
+* SQL Server 2005/2008 or SQL Server Express
+
+== Copyright
+
+Copyright (c) 2007-2011 by c.Spot InterWorks.  All Rights Reserved.  See LICENSE.txt for details.

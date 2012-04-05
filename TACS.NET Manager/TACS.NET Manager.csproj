@@ -333,6 +333,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TACS.NET Client\TACS.NET Client.csproj">
+      <Project>{54F58B38-3D62-462B-90BF-0FC882C4381F}</Project>
+      <Name>TACS.NET Client</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TACS.NET Data\TACS.NET Data.csproj">
       <Project>{F5340A21-1636-498E-996E-6F9FF67A2930}</Project>
       <Name>TACS.NET Data</Name>

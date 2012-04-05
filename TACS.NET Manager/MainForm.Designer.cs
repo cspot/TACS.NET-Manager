@@ -36,7 +36,7 @@
             this.bottomSandBarDock = new TD.SandBar.ToolBarContainer();
             this.topSandBarDock = new TD.SandBar.ToolBarContainer();
             this.menuBar1 = new TD.SandBar.MenuBar();
-            this.menuBarItem1 = new TD.SandBar.MenuBarItem();
+            this.menuFile = new TD.SandBar.MenuBarItem();
             this.mnuNew = new TD.SandBar.MenuButtonItem();
             this.mnuNewApp = new TD.SandBar.MenuButtonItem();
             this.mnuNewAcct = new TD.SandBar.MenuButtonItem();
@@ -47,7 +47,7 @@
             this.mnuAddUser = new TD.SandBar.MenuButtonItem();
             this.mnuCloseAcct = new TD.SandBar.MenuButtonItem();
             this.mnuExit = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem2 = new TD.SandBar.MenuBarItem();
+            this.menuEdit = new TD.SandBar.MenuBarItem();
             this.mnuUndo = new TD.SandBar.MenuButtonItem();
             this.mnuCut = new TD.SandBar.MenuButtonItem();
             this.mnuCopy = new TD.SandBar.MenuButtonItem();
@@ -55,15 +55,15 @@
             this.mnuDelete = new TD.SandBar.MenuButtonItem();
             this.mnuAcctSettings = new TD.SandBar.MenuButtonItem();
             this.mnuDbSettings = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem3 = new TD.SandBar.MenuBarItem();
+            this.menuView = new TD.SandBar.MenuBarItem();
             this.mnuViewApps = new TD.SandBar.MenuButtonItem();
             this.mnuViewProjects = new TD.SandBar.MenuButtonItem();
             this.mnuViewUsers = new TD.SandBar.MenuButtonItem();
             this.mnuEvents = new TD.SandBar.MenuButtonItem();
             this.mnuGettingStarted = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem4 = new TD.SandBar.MenuBarItem();
+            this.menuWindow = new TD.SandBar.MenuBarItem();
             this.mnuCloseAll = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem5 = new TD.SandBar.MenuBarItem();
+            this.menuHelp = new TD.SandBar.MenuBarItem();
             this.mnuHelp = new TD.SandBar.MenuButtonItem();
             this.mnuAbout = new TD.SandBar.MenuButtonItem();
             this.statusBar1 = new TD.SandBar.StatusBar();
@@ -90,6 +90,8 @@
             this.btnRefreshApp = new TD.SandBar.ButtonItem();
             this.btnAddApp = new TD.SandBar.ButtonItem();
             this.btnDelApp = new TD.SandBar.ButtonItem();
+            this.menuTools = new TD.SandBar.MenuBarItem();
+            this.mnuTestClient = new TD.SandBar.MenuButtonItem();
             this.topSandBarDock.SuspendLayout();
             this.dockContainer2.SuspendLayout();
             this.dockProjects.SuspendLayout();
@@ -148,11 +150,12 @@
             // 
             this.menuBar1.Guid = new System.Guid("bc7c411a-5f74-44f6-b798-bb784c6d652b");
             this.menuBar1.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
-            this.menuBarItem1,
-            this.menuBarItem2,
-            this.menuBarItem3,
-            this.menuBarItem4,
-            this.menuBarItem5});
+            this.menuFile,
+            this.menuEdit,
+            this.menuView,
+            this.menuTools,
+            this.menuWindow,
+            this.menuHelp});
             this.menuBar1.Location = new System.Drawing.Point(2, 0);
             this.menuBar1.Name = "menuBar1";
             this.menuBar1.OwnerForm = this;
@@ -161,15 +164,15 @@
             this.menuBar1.TabIndex = 0;
             this.menuBar1.Text = "menuBar1";
             // 
-            // menuBarItem1
+            // menuFile
             // 
-            this.menuBarItem1.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.menuFile.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
             this.mnuNew,
             this.mnuOpen,
             this.mnuAdd,
             this.mnuCloseAcct,
             this.mnuExit});
-            this.menuBarItem1.Text = "&File";
+            this.menuFile.Text = "&File";
             // 
             // mnuNew
             // 
@@ -234,9 +237,9 @@
             this.mnuExit.Text = "Exit";
             this.mnuExit.Activate += new System.EventHandler(this.mnuExit_Activate);
             // 
-            // menuBarItem2
+            // menuEdit
             // 
-            this.menuBarItem2.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.menuEdit.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
             this.mnuUndo,
             this.mnuCut,
             this.mnuCopy,
@@ -244,7 +247,7 @@
             this.mnuDelete,
             this.mnuAcctSettings,
             this.mnuDbSettings});
-            this.menuBarItem2.Text = "&Edit";
+            this.menuEdit.Text = "&Edit";
             // 
             // mnuUndo
             // 
@@ -288,15 +291,15 @@
             this.mnuDbSettings.Text = "Database Settings...";
             this.mnuDbSettings.Activate += new System.EventHandler(this.mnuDbSettings_Activate);
             // 
-            // menuBarItem3
+            // menuView
             // 
-            this.menuBarItem3.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.menuView.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
             this.mnuViewApps,
             this.mnuViewProjects,
             this.mnuViewUsers,
             this.mnuEvents,
             this.mnuGettingStarted});
-            this.menuBarItem3.Text = "&View";
+            this.menuView.Text = "&View";
             // 
             // mnuViewApps
             // 
@@ -332,24 +335,24 @@
             this.mnuGettingStarted.Text = "Getting Started";
             this.mnuGettingStarted.Activate += new System.EventHandler(this.mnuGettingStarted_Activate);
             // 
-            // menuBarItem4
+            // menuWindow
             // 
-            this.menuBarItem4.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.menuWindow.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
             this.mnuCloseAll});
-            this.menuBarItem4.MdiWindowList = true;
-            this.menuBarItem4.Text = "&Window";
+            this.menuWindow.MdiWindowList = true;
+            this.menuWindow.Text = "&Window";
             // 
             // mnuCloseAll
             // 
             this.mnuCloseAll.Text = "Close All Documents";
             this.mnuCloseAll.Activate += new System.EventHandler(this.mnuCloseAll_Activate);
             // 
-            // menuBarItem5
+            // menuHelp
             // 
-            this.menuBarItem5.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.menuHelp.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
             this.mnuHelp,
             this.mnuAbout});
-            this.menuBarItem5.Text = "&Help";
+            this.menuHelp.Text = "&Help";
             // 
             // mnuHelp
             // 
@@ -593,6 +596,16 @@
             this.btnDelApp.Image = global::TACS.NET_Manager.Properties.Resources.application_enterprise_delete;
             this.btnDelApp.Activate += new System.EventHandler(this.btnDelApp_Activate);
             // 
+            // menuTools
+            // 
+            this.menuTools.Items.AddRange(new TD.SandBar.ToolbarItemBase[] {
+            this.mnuTestClient});
+            this.menuTools.Text = "Tools";
+            // 
+            // mnuTestClient
+            // 
+            this.mnuTestClient.Text = "TACS.NET Client Test";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -629,11 +642,11 @@
         private TD.SandBar.ToolBarContainer bottomSandBarDock;
         private TD.SandBar.ToolBarContainer topSandBarDock;
         private TD.SandBar.MenuBar menuBar1;
-        private TD.SandBar.MenuBarItem menuBarItem1;
-        private TD.SandBar.MenuBarItem menuBarItem2;
-        private TD.SandBar.MenuBarItem menuBarItem3;
-        private TD.SandBar.MenuBarItem menuBarItem4;
-        private TD.SandBar.MenuBarItem menuBarItem5;
+        private TD.SandBar.MenuBarItem menuFile;
+        private TD.SandBar.MenuBarItem menuEdit;
+        private TD.SandBar.MenuBarItem menuView;
+        private TD.SandBar.MenuBarItem menuWindow;
+        private TD.SandBar.MenuBarItem menuHelp;
         private TD.SandBar.StatusBar statusBar1;
         private TD.SandBar.StatusBarItem statusBarItem1;
         private TD.SandDock.DockContainer dockContainer1;
@@ -681,6 +694,8 @@
         private TD.SandBar.MenuButtonItem mnuDelete;
         private TD.SandBar.MenuButtonItem mnuDbSettings;
         private TD.SandBar.MenuButtonItem mnuHelp;
+        private TD.SandBar.MenuBarItem menuTools;
+        private TD.SandBar.MenuButtonItem mnuTestClient;
     }
 }
 
